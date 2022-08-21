@@ -1,0 +1,50 @@
+<form [formGroup]="userForm" novalidate (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" formControlName="id">
+                <label for="firstname">ID</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="name">
+                <label for="lname">Name</label>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="state">
+                <label for="lname">State</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="zip">
+                <label for="lname">Zip</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="amount">
+                <label for="lname">Amount</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="qty">
+                <label for="lname">Qty</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="item">
+                <label for="lname">Item</label>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 text-end">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,71 @@
+<div class="modal fade" id="editUser" tabindex="-1" aria-labelledby="editUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h3 class="modal-title mb-0" id="editUserLabel">Update Item</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="card mb-0">
+                <div class="card-body">
+                    <form [formGroup]="updateItem" novalidate (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="id" [(ngModel)]="this.datas.id"
+                                        placeholder="ID" formControlName="id">
+                                    <label for="id">ID</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" [(ngModel)]="this.datas.name"
+                                        placeholder="Name" formControlName="name">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="state" [(ngModel)]="this.datas.state"
+                                        placeholder="State" formControlName="state">
+                                    <label for="state">State</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="zip" [(ngModel)]="this.datas.zip"
+                                        placeholder="Zip" formControlName="zip">
+                                    <label for="zip">Zip</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="amount" [(ngModel)]="this.datas.amount"
+                                        placeholder="Amount" formControlName="amount">
+                                    <label for="amount">Amount</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="qty" [(ngModel)]="this.datas.qty"
+                                        placeholder="Qty" formControlName="qty">
+                                    <label for="qty">Qty</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="item" [(ngModel)]="this.datas.item"
+                                        placeholder="Item" formControlName="item">
+                                    <label for="item">Item</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 text-end">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
